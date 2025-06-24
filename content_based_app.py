@@ -52,8 +52,8 @@ with open('companies_cosine_sim.pkl', 'rb') as f:
     cosine_sim_new = pickle.load(f)
 
 ###### Giao diện Streamlit ######
-st.image('channels4_banner.jpg', use_column_width=True)
-# st.image('channels4_banner.jpg', use_container_width=True) # phiên bản mới hơn
+#st.image('channels4_banner.jpg', use_column_width=True)
+st.image('channels4_banner.jpg', use_container_width=True) # phiên bản mới hơn
 
 # Kiểm tra xem 'selected_id' đã có trong session_state hay chưa
 if 'selected_id' not in st.session_state:
