@@ -42,6 +42,8 @@ def display_recommended_companies(recommended_companies, cols=5):
 if 'random_companies' not in st.session_state:
     df_companies = pd.read_csv('samples_17062025.csv')
     st.session_state.random_companies = df_companies.sample(n=10, random_state=42)
+else:
+    df_companies = pd.read_csv('samples_17062025.csv') 
 
 # st.session_state.random_companies = random_companies
 
